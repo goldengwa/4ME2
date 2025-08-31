@@ -92,6 +92,7 @@ app.post('/api/answer/:slug',(req,res)=>{
 app.get('/curious',(_req,res)=>res.sendFile(path.join(__dirname,'public','curious-create.html')));
 app.get('/c/:slug',(_req,res)=>res.sendFile(path.join(__dirname,'public','curious-public.html')));
 app.get('/owner/:slug',(_req,res)=>res.sendFile(path.join(__dirname,'public','curious-owner.html')));
+app.get('/', (_req, res) => res.redirect('/curious'));
 
 io.on('connection',s=>{ s.on('join',({slug})=>slug&&s.join(slug)); });
 
