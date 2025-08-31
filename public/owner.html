@@ -1,0 +1,9 @@
+
+<!doctype html><html lang="ko"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Owner Console</title><link rel="stylesheet" href="/style.css"/></head><body>
+<div class="page"><header class="header"><a href="/" class="muted">←</a><div id="title">Owner</div><div class="right"><span id="slugBadge" class="badge"></span></div></header>
+<main id="chat" class="chat"></main>
+<div class="composer"><textarea id="answer" rows="2" placeholder="답변 입력 (Shift+Enter 줄바꿈)"></textarea><button id="send" class="primary">답변 보내기</button></div></div>
+<div class="container narrow"><div class="card"><h2>로그인</h2><div class="row"><div><label>비밀번호</label><input id="passcode" type="password"/></div><div><label>&nbsp;</label><button id="login" class="primary">로그인</button></div></div>
+<p class="muted">쿠키로 로그인 유지됩니다.</p></div></div>
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script><script src="/owner.js"></script></body></html>
