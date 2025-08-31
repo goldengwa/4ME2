@@ -1,1 +1,32 @@
-<h1>Curious Public Page</h1>
+<!doctype html><html lang="ko"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>큐리어스 페이지</title>
+<link rel="stylesheet" href="/style.css"/>
+</head><body>
+<div class="container">
+  <div class="hero" id="hero">
+    <div class="header">
+      <div class="pfp">🙂</div>
+      <div>
+        <div id="nickname" style="font-weight:700;font-size:18px">닉네임</div>
+        <div id="intro" class="meta">소개글</div>
+      </div>
+    </div>
+    <div id="noticeBox" class="notice" style="display:none;margin-top:10px"></div>
+    <div class="meta" id="links" style="margin-top:8px"></div>
+  </div>
+
+  <div class="card">
+    <div class="feed" id="feed"></div>
+    <div class="composer card">
+      <textarea id="ask" class="input" rows="2" placeholder="익명으로 질문을 남겨보세요. (Shift+Enter 줄바꿈)"></textarea>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+        <button id="send" class="btn">질문 보내기</button>
+        <span class="meta">공개 URL: <code id="urlCode"></code> <button id="copy" class="badge copy">복사</button></span>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="/curious-public.js"></script>
+</body></html>
