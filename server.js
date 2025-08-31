@@ -12,6 +12,12 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 const __dirname = path.resolve();
+import path from 'path';
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, 'public')));
+app.get('/', (_req, res) =>
+  res.sendFile(path.join(__dirname, 'public', 'index.html'))
+);
 
 dotenv.config();
 const app = express();
