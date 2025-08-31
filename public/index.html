@@ -1,0 +1,28 @@
+
+<!doctype html><html lang="ko"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Pushoong-ish 익명 Q&A</title><link rel="stylesheet" href="/style.css"/></head><body>
+<div class="container">
+  <div class="header-hero">
+    <div class="hero-title">내 Q&A 페이지 만들기</div>
+    <div class="hero-sub">슬러그로 나만의 질문함을 만들고 링크를 공유하세요. (/@yourname)</div>
+  </div>
+  <div class="card">
+    <div class="row">
+      <div><label>슬러그 (영문/숫자/대시, 3~24자)</label><input id="slug" placeholder="yoonha"/></div>
+      <div><label>표시 이름</label><input id="displayName" placeholder="윤하의 Q&A"/></div>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <div><label>비밀번호(소유자)</label><input id="passcode" type="password" placeholder="4자 이상"/></div>
+      <div><label>&nbsp;</label><button id="create" class="primary">생성</button></div>
+    </div>
+    <p id="createResult"></p>
+  </div>
+  <div class="card">
+    <label>바로 이동</label>
+    <input id="goSlug" placeholder="yoonha"/>
+    <p style="margin-top:8px"><a id="visit">/ @슬러그 열기</a> <span class="badge">예: /@yoonha</span></p>
+  </div>
+  <div class="footer">© 2025 Pushoong-ish Q&A • Express + Socket.IO</div>
+</div>
+<script src="/index.js"></script>
+</body></html>

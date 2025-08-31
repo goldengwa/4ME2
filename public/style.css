@@ -1,0 +1,32 @@
+
+:root{
+  --bg:#0f1221; --text:#e9ecf4; --muted:#a6b0c2; --card:#141833; --border:#232954;
+  --accent:#7aa2ff; --accent2:#60e0c0; --danger:#ff6b6b; --like:#ffd166;
+}
+*{box-sizing:border-box} html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Noto Sans KR,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.container{max-width:860px;margin:auto;padding:16px}
+h1{margin:0 0 8px;font-size:28px} h2{font-size:20px;margin:12px 0}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;margin:12px 0;box-shadow:0 6px 28px rgba(5,8,20,.25)}
+label{display:block;margin:6px 0;color:var(--muted)}
+input,textarea{width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:#0e1330;color:var(--text)}
+textarea{resize:none} button{border:1px solid var(--border);background:#111844;color:var(--text);padding:10px 14px;border-radius:12px;cursor:pointer}
+button.primary{background:var(--accent);border-color:var(--accent);color:#0b0f22;font-weight:700}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.badge{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--border);background:#0c1130;color:var(--accent2)}
+
+.header-hero{border-radius:18px;padding:24px;margin:12px 0;background:linear-gradient(135deg,#232a6c 0%,#1b224f 40%,#13213a 100%);border:1px solid var(--border)}
+.hero-title{font-size:22px;font-weight:700}
+.hero-sub{color:var(--muted);margin-top:6px}
+
+.feed{display:flex;flex-direction:column;gap:12px}
+.qcard,.acard{border-radius:16px;border:1px solid var(--border);padding:12px;background:#121739}
+.qmeta,.ameta{font-size:12px;color:var(--muted);margin-top:6px}
+.qactions{display:flex;gap:10px;margin-top:8px}
+.iconbtn{font-size:12px;border-radius:10px;padding:6px 10px;background:#0f1433}
+.iconbtn.like{background:#201927}
+
+.composer{position:sticky;bottom:0;background:transparent;padding:0;margin-top:16px}
+.composer .card{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:start}
+.likecount{color:var(--like);margin-left:4px}
+.footer{margin:20px 0;color:var(--muted);font-size:12px;text-align:center}

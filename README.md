@@ -1,13 +1,16 @@
 
-# 익명 Q&A (다대일, 슬러그 링크)
-한 사람의 Q&A 페이지(`/@slug`)에 여러 사람이 익명으로 질문을 남기고, 오직 그 페이지 주인만 답변하는 채팅형 Q&A.
+# Pushoong-ish 익명 Q&A (다대일)
+PUSHOONG을 **참고한 카드형 UI**이지만, **원본 소스 복제 없이** 새로 구현한 공개 Q&A 피드입니다.
+
+- 공개 Q&A: `/@slug` (카드 피드, 좋아요/신고(클라 시뮬레이션))
+- 소유자 콘솔: `/owner/slug` (로그인 후 답변 발행)
+- API/서버 구조: Express + Socket.IO (파일 저장)
 
 ## 실행
 npm install
 npm start
 → http://localhost:3000
 
-## 흐름
-1) 홈에서 slug/표시이름/비밀번호로 생성
-2) 공개 페이지 `/@slug`에서 누구나 질문
-3) 소유자 페이지 `/owner/slug`에서 로그인 후 답변
+## 배포(Render)
+Build: npm install
+Start: npm start
