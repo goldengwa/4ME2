@@ -1,1 +1,39 @@
-<h1>Curious Create Page</h1>
+<!doctype html><html lang="ko"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>큐리어스 만들기</title>
+<link rel="stylesheet" href="/style.css"/>
+</head><body>
+<div class="container">
+  <h1>나만의 큐리어스 만들기</h1>
+  <div class="card">
+    <div class="row">
+      <div><label>닉네임 *</label><input id="nickname" class="input" placeholder="닉네임"/></div>
+      <div><label>나만의 URL(별칭) *</label>
+        <div style="display:flex;gap:6px;align-items:center">
+          <span class="badge">/c/</span><input id="alias" class="input" placeholder="myname" style="flex:1"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div><label>소개글</label><textarea id="intro" class="input" rows="3"></textarea></div>
+      <div><label>플로팅 공지(제목↵내용)</label><textarea id="notice" class="input" rows="3"></textarea></div>
+    </div>
+    <div class="row">
+      <div><label>트위터</label><div style="display:flex;gap:6px"><span class="badge">https://twitter.com/</span><input id="twitter" class="input" placeholder="username"/></div></div>
+      <div><label>인스타그램</label><div style="display:flex;gap:6px"><span class="badge">https://instagram.com/</span><input id="instagram" class="input" placeholder="username"/></div></div>
+    </div>
+    <div><label>링크(기타)</label><div style="display:flex;gap:6px"><span class="badge">https://</span><input id="common" class="input" placeholder="example.com"/></div></div>
+    <div class="row">
+      <div><label>공개 여부 *</label><select id="visibility" class="input"><option value="public">공개</option><option value="private">비공개(미구현)</option></select></div>
+      <div><label>테마 *</label><select id="theme" class="input"><option value="chat:default" selected>채팅형</option><option value="comment:default">댓글형</option></select></div>
+    </div>
+    <div class="row">
+      <div><label>비밀번호 *</label><input id="password" type="password" class="input" placeholder="관리자 비밀번호"/></div>
+      <div><label>비번 재설정 질문/정답</label><input id="resetQ" class="input" placeholder="질문"/><input id="resetA" class="input" placeholder="정답"/></div>
+    </div>
+    <button id="create" class="btn">만들기</button>
+    <div id="result" class="meta"></div>
+  </div>
+</div>
+<script src="/curious-create.js"></script>
+</body></html>
